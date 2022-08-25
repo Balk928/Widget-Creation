@@ -1,0 +1,47 @@
+/*
+ * @author DSIS
+ */
+
+ p {
+    border-bottom: 1px solid grey;
+}
+
+
+th {
+    font-weight: bold;
+}
+
+td,
+th {
+    
+    padding: 5px;
+}
+
+th{
+    background-color: #2691d9;
+    padding: 16px 25px;
+    font-size: 17px;
+    color: rgb(231, 231, 231);
+}
+td{
+    padding: 16px 20px;
+    font-size: 12px;
+}
+
+#first{
+    background-color: rgb(138, 198, 218);
+}
+#second{
+    background-color: rgb(235, 230, 230);
+}
+#third{
+    background-color: lightblue;
+}
+button{
+    width: 140px;
+    height:52px;
+}
+button:active{
+    background-color: #2691d9;
+}
+

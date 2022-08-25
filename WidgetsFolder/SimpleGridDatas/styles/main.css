@@ -1,0 +1,15 @@
+
+
+table,thead {
+    border: 1px solid grey;
+}
+
+th {
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid grey;
+    padding: 5px;
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:widget="http://www.netvibes.com/ns/">
+
+<head>
+	<title>DSIS Sample Widget Get Data</title>
+
+	<meta name="author" content="DSIS" />
+	<meta name="description" content="DSIS Sample Widget WAFData" />
+	<meta name="apiVersion" content="1.3" />
+	<meta name="debugMode" content="true" />
+	<meta name="strictMode" content="false" />
+
+	<script type="text/javascript" src="../DSISLibraries/jquery/jquery-3.2.1.min.js"></script>
+
+	<!-- Application Preferences -->
+	<widget:preferences>
+		<widget:preference type="text" name="userName" label="User Name" defaultValue="" />
+        <widget:preference type="list" name="userRole" label="User Role" defaultValue="">
+            <widget:option label="Engineer" value="Engineer"></widget:option>
+            <widget:option label="Designer" value="Designer"></widget:option>
+            <widget:option label="Manager" value="Manager"></widget:option>
+        </widget:preference>
+        <widget:preference type="boolean" name="3DExpAccountCheck" label="3DEXPERIENCE Account Status" defaultValue=""/>
+        <widget:preference type="range" name="limit" step="1" min="1" max="7" defaultValue="2" label="Job Level"/>    
+	</widget:preferences> 
+
+	<!-- Widget files -->
+	<link rel="stylesheet" type="text/css" href="styles/main.css" />
+	<script type="text/javascript" src="scripts/main.js"></script>
+
+	<script type="text/javascript">
+		function widgetLoading() {
+			if (widget) {
+				executeWidgetCode();
+			} else {
+				console.warn("Defered widget Loading");
+				setTimeout(widgetLoading, 100); //Wait for widget object to be added correctly
+			}
+		}
+		widgetLoading();
+	</script>
+
+</head>
+
+<body>
+	<p>Loading...</p>
+</body>
+
+</html>
